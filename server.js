@@ -35,6 +35,6 @@ app.set('view engine', 'handlebars');
 app.use(require('./controllers/'));
 
 // Set 'force:true' to re-create tables and association changes.
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
