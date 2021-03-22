@@ -3,7 +3,7 @@
 
 
 ## 💬 Description 
-
+A CMS-style blog site similar to a Wordpress site, where developers can publish blog posts and comment on other developers' posts as well. This app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 
 ## 📓 Table of Contents
@@ -13,7 +13,7 @@
 * [Mock-Up](#mock-up)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Built With](#built-with)
+* [Dependencies](#dependencies)
 * [License](#license)
 * [Badges](#badges)
 * [Tests](#tests)
@@ -68,14 +68,8 @@ THEN I am automatically signed out of the site
 
 
 ## 🎨Mock-Up
-<br>**Shows GET routes to return all categories, all products, and all tags being tested in Incomnia Core:**</br>
-<br>![](assets/mock-up1.gif)</br>
-
-<br>**Shows GET routes to return a single category, a single product, and a single tag being tesed in Insomnia Core:**</br>
-<br>![](assets/mock-up2.gif)</br>
-
-<br>**Shows the POST, PUT, and DELETE routes for categories being tested in Insomnia Core:**</br>
-<br>![](assets/mock-up3.gif)</br>
+<br>**The following animation demonstrates the application functionality:**</br>
+<br>![](assets/mock-up.gif)</br>
 
 
 ## 🔌Installation
@@ -91,7 +85,7 @@ To run on _localhost:3001_, please run command _npm start_ to start the server a
 <br>![](assets/example.gif)</br>
 
 
-## ✏️Built With
+## ✏️Dependencies
 <p><a href="https://nodejs.org/">Node.js</a></p>
 <p><a href="https://www.npmjs.com/">NPM</a></p>
 <p><a href="https://www.npmjs.com/package/express">Express.js</a></p>
@@ -99,6 +93,10 @@ To run on _localhost:3001_, please run command _npm start_ to start the server a
 <p><a href="https://www.npmjs.com/package/sequelize">Sequelize</a></p>
 <p><a href="https://www.npmjs.com/package/dotenv">dotenv</a></p>
 <p><a href="https://heroku.com/">Heroku</a></p>
+<p><a href="https://www.npmjs.com/package/express-handlebars">express-handlebars</a></p>
+<p><a href="https://www.npmjs.com/package/bcrypt">bycrypt</a></p>
+<p><a href="https://www.npmjs.com/package/express-session">express-session</a></p>
+<p><a href="https://www.npmjs.com/package/connect-session-sequelize">connect-session-sequelize</a></p>
 
 
 ## 🔐License
