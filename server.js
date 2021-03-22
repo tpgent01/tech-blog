@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-    secret: '53cr3t50m3th1ng',
+    secret: 'Super secret secret',
     cookie: {
         maxAge: 300 * 1000
     },
@@ -42,5 +42,3 @@ app.set('view engine', 'handlebars');
 sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
-
-// Set 'force:true' to re-create the tables and association changes.
