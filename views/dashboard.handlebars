@@ -1,31 +1,36 @@
-<section>
-  <h2>Create New Post</h2>
-
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+<form class="create-form">
+    <h2>Create New Post</h2>
+        <div class="form-contents">
+            <div>
+                <label class="text" for="create-title">Title</label>
+                <input type="text" id="create-title" name="create-title" />
+            </div>
+            <div>
+                <label class="text" for="create-content">Content</label>
+                <input type="text" id="create-content" name="create-content" />
+            </div>
+            <div>
+                <button type="submit" id="create-post">Create Post</button>
+            </div>
+        </div>
+</form>
 
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
+<div class="comment-section">
+    <h3 class="your-posts">Your Posts:</h3>
+        {{#each posts as |post|}}
+        <section>
+            <div class="blog-section">
+                <div class="blog-header">
+                    <h2>{{post.title}} by {{post.user.username}}</h2>
+                </div>
+                <p class="blog-text">
+                    {{post.post_content}}
+                </p>
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            </div> 
+        </section>
+        {{/each}}
+</div>
 {{/if}}
-
-<script src="/javascript/add-post.js"></script>
+<script src="../public/javascript/add-post.js"></script>
